@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Agora SDK Tutorial</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="Videostyles.css" />
+</head>
+
+<body>
+    <div class="flexContainer">
+        <div class="left-pane">
+            <div class="logoSmall">
+                <img class="logoElement" src="assets/agoraLogo.png"></img>
+            </div>
+            <span class="headingText">
+                Join A Chat!
+            </span>
+            <input type="text" id="userName" placeholder="Username">
+            <input type="text" id="ChannelName" placeholder="Channel Name">
+            <button class="submitButton" id="join">Join!</button>
+            <br />
+            <div id="usersList" class="headingText" style="display: block; margin-top:50px">
+                Participants
+                <br />
+            </div>
+        </div>
+        <div class="right-pane">
+            <div class="right-container">
+                <div id="SelfStream">
+                </div>
+                <div id="remoteStream" class="remoteStream">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.agora.io/sdk/release/AgoraRTCSDK-3.0.0.js"></script>
+    <script src="./agora-rtc.js"></script>
+</body>
+
+</html>
